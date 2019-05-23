@@ -11,7 +11,8 @@
 <body>
 	<h2>Select a Product Category</h2>
 	<select name="categories" id="categories">
-		<option value="-">--Select a Category--</option>
+		<option value="-"
+		>--Select a Category--</option>
 		<option value="food">Food</option>
 		<option value="beverages">Beverages</option>
 		<option value="cars">Cars</option>
@@ -43,7 +44,7 @@
 					// console.log(choices[category][i]);
 					output = output + '<option value="">' + choices[category][i] + '</option>';
 				}
-				$('#products').append(output).show();
+				$('#products').append(output);
 				$('#products').prop("disabled",false);
 			} else {
 				$('#products').empty();

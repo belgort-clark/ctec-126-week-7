@@ -20,7 +20,7 @@
 
 	$(document).ready(function() {
 		$('#content').html('0');
-		$('#firstName').on('keyup',function(evt){
+		$('#firstName').on('keyup',function(){
 			$('#content').html($('#firstName').val().length);
 			if($(this).val().length >= 8){
 				$(this).css({background:'red'});
